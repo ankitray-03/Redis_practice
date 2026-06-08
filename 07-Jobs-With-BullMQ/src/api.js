@@ -3,6 +3,7 @@ import { emailQueue } from "./queue.js";
 
 const app = express();
 app.use(express.json());
+
 const PORT = process.env.PORT || 3000;
 
 app.post("/welcome-email", async (req, res) => {
